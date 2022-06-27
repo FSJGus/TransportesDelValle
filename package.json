@@ -1,0 +1,19 @@
+{
+  "name": "transdelvalle",
+  "version": "1.0.0",
+  "description": "Web Site Transportes del Valle",
+  "main": "\\",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FSJGus/TransportesDelValle.git"
+  },
+  "author": "Gustavo Lima",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FSJGus/TransportesDelValle/issues"
+  },
+  "homepage": "https://github.com/FSJGus/TransportesDelValle#readme"
+}
