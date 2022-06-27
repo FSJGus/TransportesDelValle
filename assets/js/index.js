@@ -58,3 +58,8 @@ function reset() {
   messageEl = "";
   document.querySelector(".name-error").innerText = "";
 }
+
+var today = new Date();
+var date = today.getFullYear();
+document.getElementById("laFecha").innerHTML = date;
+
