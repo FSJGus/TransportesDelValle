@@ -1,5 +1,4 @@
 
-
 * {
   padding: 0;
   margin: 0;
@@ -24,6 +23,20 @@ body {
   height: 80px;
 }
 
+.btnUp {
+display: flex;
+justify-content: center;
+align-items: center;
+  float: right;
+  background-color: #fd1c23;
+  border-radius: 50px;
+  opacity: 45%;
+  width: 80px;
+  height: 80px;
+  right: 10px;
+  bottom: 60px;
+  color: #fff;
+}
 .ulList {
   font-family: "Lato", sans-serif;
   font-weight: 300;
@@ -44,13 +57,15 @@ body {
 }
 
 .popup {
+
   background: papayawhip;
+  height: 630px;
   width: 450px;
   padding: 25px 35px;
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
-  top: 50%;
+  top: 75%;
   border-radius: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -522,4 +537,237 @@ button, .submit-btn {
   #contacto {
     display: none;
   }
+  .ocultar {
+    display: none;
+
+  }
+ 
 } 
+
+@media only screen and (max-width: 741px) {
+  /*Tablet*/
+.email-info {
+    font-size: 14px;
+}
+navbar {
+  display: flex;
+  
+  background-color: #fff;
+}
+.nav-item {
+  padding: 0px;
+}
+/* .tablet {
+  width: 60%;
+} */
+  
+  .contain {
+    background-color: #F3F2F2;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding: 1em;
+  }
+  
+  div.form {
+    background-color: #dedede;
+  }
+  .contact-wrapper {
+    margin: auto 0;
+  }
+  
+  .submit-btn {
+    float: left;
+  }
+  .reset-btn {
+    float: right;
+  }
+  
+  .form-headline:after {
+    content: "";
+    display: block;
+    width: 10%;
+    padding-top: 10px;
+    border-bottom: 3px solid #ec1c24;
+  }
+  
+  .highlight-text {
+    color: #ec1c24;
+  }
+  
+  .hightlight-contact-info {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.5;
+  }
+  
+  .highlight-text-grey {
+    font-weight: 500;
+  }
+  
+  .email-info {
+      margin-top: 20px;
+  }
+  
+  ::-webkit-input-placeholder { /* Chrome */
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .required-input {
+    color: black;
+  }
+  
+  h3,
+  ul {
+    margin: 0;
+  }
+  
+  h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .form-input:focus,
+  textarea:focus{
+    outline: 1.5px solid #ec1c24;
+  }
+  
+  .form-input,
+  textarea {
+    width: 100%;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+  }
+  .wrapper > * {
+    padding: 1em;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  .contacts {
+    color: #212d31;
+  }
+  
+  .form {
+    background: #fff;
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  form label {
+    display: block;
+  }
+  form p {
+    margin: 0;
+  }
+  
+  .full-width {
+    grid-column: 1 / 1;
+  }
+  
+  button,
+  .submit-btn,
+  .form-input,
+  textarea {
+    padding: 1em;
+  }
+  
+  button, .submit-btn {
+    background: transparent;
+    border: 1px solid #ec1c24;
+    color: #ec1c24;
+    border-radius: 15px;
+    padding: 5px 20px;
+    text-transform: uppercase;
+  }
+  .btn-form:hover, .submit-btn:hover,
+  .btn-form:focus , .submit-btn:focus{
+    background: rgba(0, 0, 0);
+    outline: 0;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: none;
+  }
+  .btn-carousel:hover, .btn-carousel:focus {
+    background: rgba(255, 255, 255, 0.20);
+    outline: 0;
+    color: #eee;
+  }
+  .error {
+    color: #ec1c24;
+  }
+  #logoHeader {
+    margin: 0 auto;
+  }
+  .cards {
+    width: 330px;
+  }
+  form {
+    display: none;
+  }
+  #contacto {
+    display: none;
+  }
+  .ocultar {
+    display: none;
+
+  }
+  .popup {
+
+    background: papayawhip;
+    height: 600px;
+    width: 450px;
+    padding: 25px 35px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 610px;
+    border-radius: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    display: none;
+    z-index: 999;
+    border: 5px solid chocolate;
+    backdrop-filter: blur(10px);
+  
+  }
+  
+  .popup button {
+    display: block;
+    margin: 0 0 20px auto;
+    background-color: transparent;
+    font-size: 40px;
+    color: chocolate;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .popup p {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    color: black;
+  }
+  .popup h2 {
+      font-weight: bold;
+      color: #fff
+  }
+  form {
+    display: block;
+    width: 80%;
+  }
+header {
+  display: none;
+}
+}

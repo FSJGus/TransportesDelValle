@@ -29,6 +29,7 @@
 </head>
 
 <body>
+    <!--Boton para subir-->
 
     <!-- P O P U P   P R O M O -->
     <div class="desenfoque">
@@ -45,8 +46,8 @@
         </div>
     </div>
 
-    <!-- NAVBAR -->
-    <header class="container-fluid bg-dark ">
+    <!-- Header -->
+    <header class="container-fluid bg-dark sticky-xl-top shadow">
         <!--Top Header Right-->
         <div class="row">
             <div class="col-xs-12 col-md-8 headerTopContainer ">
@@ -97,13 +98,13 @@
     <!-- MAIN SECTION -->
 
     <!-- NAVBAR -->
-    <navbar class="container-fluid d-flex">
-        <nav class="navbar navbar-expand-sm d-flex navbar-light col-xs-12 text-center w-100 ">
+    <navbar class="container-fluid d-flex ">
+        <nav class="navbar navbar-expand-sm d-flex navbar-light col-xs-12 justify-content-center w-100 ">
             <div class="col-xs-12 col-md-6 d-flex">
                 <a class="navbar-brand" href="#"><img src="assets/img/logo-wbg-sm.png" alt="Logo" srcset=""
                         id="logoHeader"></a>
             </div>
-            <button class="navbar-toggler d-lg-none col-xs-12 mx-auto" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler d-lg-none col-xs-12 mx-auto ocultar" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -120,15 +121,14 @@
                         <a class="nav-link" href="#resena">Testimonios</a>
                     </li>
                     <li class="nav-item underline">
-                        <a class="nav-link" href="#contacto">Contacto</a>
+                        <a class="nav-link" href="#footer">Contacto</a>
                     </li>
                 </ul>
 
             </div>
         </nav>
-
-
     </navbar>
+
     <main>
         <!-- CAROUSEL -->
         <section class="container-fluid p-0">
@@ -167,6 +167,7 @@
                     </button>
                 </div>
 
+                
 
             </div>
         </section>
@@ -442,15 +443,15 @@
         <!-- CONTACT FORM -->
         <div class="contain">
             <div class="wrapper">
-                <div class="form">
+                <div class="form tablet">
 
-                    <h2 class="form-headline">Tu consultas son bienvenidas</h2>
+                    <h2 class="form-headline" id="footer">Tu consultas son bienvenidas</h2>
                     <form id="submit-form" name="contact-form" method="post" action="/correo.php" netlify
                         data-netlify="true">
                         <!--data-netlify="true"-->
                         <p>
                             <input id="nombre" class="form-input" type="text" placeholder="Nombre y apellido*"
-                                name="nombre" required >
+                                name="nombre" required>
                             <small class="name-error"></small>
                         </p>
                         <p>
@@ -468,7 +469,7 @@
                                 name="mensaje" required></textarea>
                             <small></small>
                         </p>
-                        
+
                         <div data-netlify-recaptcha="true"></div>
                         <p class="full-width">
                             <button type="submit" class="submit-btn btn-form" value="Submit"
@@ -483,41 +484,51 @@
                                 de 30 min.</span><br> </li>
                         <span class="hightlight-contact-info" id="contact-info">
                             <li class="email-info"><i class="fa fa-envelope" aria-hidden="true"></i>
-                                transportesdelvallechile@gmail.com</li>
+                                <a href="transportesdelvallechile@gmail.com" target="_blank"></a>
+                                transportesdelvallechile@gmail.com
+                            </li><br>
                             <li><i class="fa fa-phone" aria-hidden="true"></i><a href="https://wa.link/ooswrq"
-                                    target="_blank" style="text-decoration: none"><span class="highlight-text">+56 9
+                                    target="_blank" style="text-decoration: none"><span class="highlight-text p-2">+56 9
                                         9858
                                         3104
                                     </span></a></li>
                             <li><i class="fa fa-phone" aria-hidden="true"></i><a href="https://wa.link/9ppu26"
-                                    target="_blank" style="text-decoration: none"><span class="highlight-text">+56 9
+                                    target="_blank" style="text-decoration: none"><span class="highlight-text p-2">+56 9
                                         8495 4930</span></a></li>
-                        </span>
+                        </span><br>
+                        <ul class="headerTop d-flex mx-auto">
+                            <li class="d-inline">
+                                <a href="https://www.instagram.com/transportesdelvalle_/" target="_blank"
+                                    class="text-dark"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                            </li>
+                            <li class="d-inline">
+                                <a href="https://www.facebook.com/Transportes-del-Valle-108240911851211" target="_blank"
+                                    class="text-dark"><i class="fa-brands fa-facebook fa-2x">
+                                    </i></a>
+                            </li>
+                        </ul>
                     </ul>
+
                 </div>
             </div>
         </div>
         <!-- End contact form -->
-
-        <!-- Footer -->
-        <div class="container-fluid bg-dark uList2">
-                    <ul class="footer d-inline ">
-                        <li class="d-inline ">
-
-                            <p class="text-light text-footer text-center " id="reservado"> Diseñado por: Lima Frontend
-                                Solutions &nbsp; | &nbsp;Todos los derechos reservados. 2022 - <span id="laFecha"></span>  &nbsp; | &nbsp;
-                                ventas.lgpro@gmail.com
-                                
-                            </p>
-
-                           
-                        </li>
-                     
-                    </ul>
-
-                </div>
+        <div class="btnUp sticky-xl-bottom">
+            <a href="#"><i class="fa-solid fa-house"></i>
+            </a>
             </div>
-        </div>
+        <!-- Footer -->
+        <footer class="container-fluid bg-dark uList2">
+            <ul class="footer d-inline ">
+                <li class="d-inline ">
+                    <p class="text-light text-footer text-center " id="reservado"> Diseñado por: Lima Frontend
+                        Solutions &nbsp; | &nbsp;Todos los derechos reservados. 2022 - <span id="laFecha"></span> &nbsp;
+                        | &nbsp;
+                        ventas.lgpro@gmail.com
+                    </p>
+                </li>
+            </ul>
+        </footer>
 
         <!--End Container Footer-->
 
