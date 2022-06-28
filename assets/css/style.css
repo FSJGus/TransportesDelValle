@@ -27,15 +27,16 @@ body {
 display: flex;
 justify-content: center;
 align-items: center;
-  float: right;
-  background-color: #fd1c23;
-  border-radius: 50px;
-  opacity: 45%;
-  width: 80px;
-  height: 80px;
-  right: 10px;
-  bottom: 60px;
-  color: #fff;
+float: right;
+background-color: #ffb6b8;
+border-radius: 50px;
+width: 80px;
+height: 80px;
+right: 10px;
+bottom: 60px;
+color: #fff;
+opacity: 38%;
+position: sticky;
 }
 .ulList {
   font-family: "Lato", sans-serif;
@@ -544,11 +545,12 @@ button, .submit-btn {
  
 } 
 
-@media only screen and (max-width: 741px) {
+@media only screen and (max-width: 800px) {
   /*Tablet*/
 .email-info {
     font-size: 14px;
 }
+
 navbar {
   display: flex;
   
@@ -560,7 +562,9 @@ navbar {
 /* .tablet {
   width: 60%;
 } */
-  
+html {
+  width: 100%;
+}  
   .contain {
     background-color: #F3F2F2;
     max-width: 100%;
